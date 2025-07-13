@@ -22,7 +22,24 @@ header {
     background: linear-gradient(135deg, #004080, #0066cc);
     color: white;
     padding: 60px 0;
-    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.profile-section {
+    flex-shrink: 0;
+}
+
+.info-section {
+    flex: 1;
+    text-align: left;
 }
 
 header h1 {
@@ -49,8 +66,7 @@ header h2 {
 
 .social-links {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -67,6 +83,16 @@ header h2 {
 .social-links a:hover {
     background-color: white;
     color: #004080;
+}
+
+.whatsapp-btn {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+}
+
+.whatsapp-btn:hover {
+    background-color: white !important;
+    color: #25D366 !important;
 }
 
 /* Main Content */
@@ -108,6 +134,23 @@ section ul {
 
 section li {
     margin-bottom: 8px;
+}
+
+/* Skills and Experience Grid */
+.skills-experience-grid {
+    margin-top: 20px;
+}
+
+.skills-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.experience-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* Skills Grid */
@@ -200,6 +243,21 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .info-section {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     header h1 {
         font-size: 2rem;
     }
@@ -208,15 +266,13 @@ footer p {
         font-size: 1.1rem;
     }
 
-    .social-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
     section {
         padding: 25px;
         margin: 20px 0;
+    }
+
+    .skills-column {
+        grid-template-columns: 1fr;
     }
 
     .skills-grid {
@@ -265,6 +321,10 @@ footer p {
         padding: 40px 0;
     }
 
+    .header-content {
+        padding: 0 15px;
+    }
+
     header h1 {
         font-size: 1.8rem;
     }
@@ -289,6 +349,15 @@ footer p {
         width: 100%;
         min-width: unset;
     }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-links a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }
 
 /* Estilo para a foto de perfil */
@@ -303,7 +372,7 @@ footer p {
 
 /* Tabela de Contato */
 .contact-table {
-    margin: 0 auto 30px auto; /* Centraliza a tabela */
+    margin: 0 0 30px 0; /* Remove centralização automática */
     border-collapse: collapse;
     color: white;
 }
@@ -359,6 +428,28 @@ footer p {
 .form-group input:valid,
 .form-group textarea:valid {
     border-color: #28a745;
+}
+
+.form-group input.invalid,
+.form-group textarea.invalid {
+    border-color: #dc3545;
+}
+
+.email-validation,
+.field-validation {
+    font-size: 0.875rem;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+.email-validation.valid,
+.field-validation.valid {
+    color: #28a745;
+}
+
+.email-validation.invalid,
+.field-validation.invalid {
+    color: #dc3545;
 }
 
 .submit-btn {
