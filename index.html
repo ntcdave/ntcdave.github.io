@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davi Brito do Nascimento - Desenvolvedor de Software</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
+            <img src="https://gravatar.com/userimage/222267619/2ac8171fe480974b766e54bb39a0e1c7.jpeg?size=256&cache=1752436480032" alt="Foto de Perfil de Davi Brito" class="profile-pic">
+
             <h1>Davi Brito do Nascimento</h1>
             <h2>Vaga em Desenvolvimento de Software</h2>
             
-            <div class="contact-info">
-                <p><strong>Local:</strong> Rio Branco, Acre</p>
-                <p><strong>Celular:</strong> (68) 99237-3632</p>
-                <p><strong>E-mail:</strong> davibrito.tech@gmail.com</p>
-            </div>
+            <table class="contact-table">
+                <tr>
+                    <td><strong>Local:</strong></td>
+                    <td>Rio Branco, Acre</td>
+                </tr>
+                <tr>
+                    <td><strong>Celular:</strong></td>
+                    <td>(68) 99237-3632</td>
+                </tr>
+                <tr>
+                    <td><strong>E-mail:</strong></td>
+                    <td>davibrito.tech@gmail.com</td>
+                </tr>
+            </table>
 
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/ntcdave/" target="_blank">LinkedIn</a>
@@ -109,6 +122,33 @@
                 </div>
             </div>
         </section>
+
+        <section id="contato">
+            <h2>Envie uma Mensagem</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="user_name" required placeholder="Digite seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="user_email" required placeholder="seu.email@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto *</label>
+                    <input type="text" id="assunto" name="subject" required placeholder="Assunto da mensagem">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="message" rows="6" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <span class="btn-text">Enviar Mensagem</span>
+                </button>
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </section>
+
     </main>
 
     <footer>
@@ -120,5 +160,6 @@
             </div>
         </div>
     </footer>
-</body>
+
+ </body>
 </html>
