@@ -4,72 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davi Brito do Nascimento - Desenvolvedor de Software</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-
-    <nav id="navbar">
-        <div class="nav-container">
-            <span class="nav-brand">Davi Brito</span>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li><a href="#experiencia" class="nav-link">Experiência</a></li>
-                <li><a href="#educacao" class="nav-link">Educação</a></li>
-                <li><a href="#contato" class="nav-link nav-cta">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <header>
-        <div class="header-content">
-            <div class="profile-section">
-                <img src="https://gravatar.com/userimage/222267619/2ac8171fe480974b766e54bb39a0e1c7.jpeg?size=256&cache=1752436480032" alt="Foto de Perfil de Davi Brito" class="profile-pic">
-            </div>
-            <div class="info-section">
-                <p class="header-label">Desenvolvedor de Software</p>
-                <h1>Davi Brito<br>do Nascimento</h1>
-                <h2>Buscando Vaga em Desenvolvimento de Software</h2>
-
-                <div class="contact-chips">
-                    <span class="chip"><i class="fas fa-map-marker-alt"></i> Rio Branco, Acre</span>
-                    <a href="tel:+5568992373632" class="chip chip-link"><i class="fas fa-phone"></i> (68) 99237-3632</a>
-                    <a href="mailto:davibrito.tech@gmail.com" class="chip chip-link"><i class="fas fa-envelope"></i> davibrito.tech@gmail.com</a>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-section">
+                    <img src="https://gravatar.com/userimage/222267619/2ac8171fe480974b766e54bb39a0e1c7.jpeg?size=256&cache=1752436480032" alt="Foto de Perfil de Davi Brito" class="profile-pic">
                 </div>
+                <div class="info-section">
+                    <h1>Davi Brito do Nascimento</h1>
+                    <h2>Vaga em Desenvolvimento de Software</h2>
+                    
+                    <table class="contact-table">
+                        <tr>
+                            <td><strong>Local:</strong></td>
+                            <td>Rio Branco, Acre</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Celular:</strong></td>
+                            <td>(68) 99237-3632</td>
+                        </tr>
+                        <tr>
+                            <td><strong>E-mail:</strong></td>
+                            <td>davibrito.tech@gmail.com</td>
+                        </tr>
+                    </table>
 
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/ntcdave/" target="_blank" rel="noopener noreferrer" class="social-btn linkedin">
-                        <i class="fab fa-linkedin-in"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/ntcdave" target="_blank" rel="noopener noreferrer" class="social-btn github">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://wa.me/5568992373632" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ntcdave/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/ntcdave" target="_blank">GitHub</a>
+                        <a href="https://wa.me/5568992373632" target="_blank" class="whatsapp-btn">WhatsApp</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="header-wave">
-            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#f0f4f8"/>
-            </svg>
         </div>
     </header>
 
     <main class="container">
-        <section id="sobre" class="fade-in">
-            <div class="section-header">
-                <i class="fas fa-user section-icon"></i>
-                <h2>Sobre Mim</h2>
-            </div>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
             <p>Estudante de Tecnologia em Sistemas para Internet, com mais de dois anos de experiência prática em engenharia de software.</p>
             <p>Atuei no desenvolvimento de aplicações web, cobrindo desde análise de requisitos até manutenção.</p>
             <p>Tenho domínio em Java, Python, JavaScript e frameworks como Spring, Django e React. Experiência com metodologias ágeis (Scrum, Kanban).</p>
@@ -77,145 +54,101 @@
             <p><strong>Nível de inglês:</strong> Intermediário-avançado (B2).</p>
         </section>
 
-        <section id="habilidades" class="fade-in">
-            <div class="section-header">
-                <i class="fas fa-code section-icon"></i>
-                <h2>Habilidades</h2>
-            </div>
-            <div class="skills-column">
-                <div class="skill-category">
-                    <h3><i class="fas fa-terminal"></i> Linguagens</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">C++</span>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="skills-experience-grid">
+                <div class="skills-column">
+                    <div class="skill-category">
+                        <h3>Linguagens</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>C++</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-layer-group"></i> Frameworks &amp; Tecnologias</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">Django</span>
-                        <span class="tag">Angular</span>
-                        <span class="tag">Git / GitHub</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Figma</span>
-                        <span class="tag">Postman</span>
-                        <span class="tag">VSCode</span>
+                    <div class="skill-category">
+                        <h3>Frameworks & Tecnologias</h3>
+                        <ul>
+                            <li>Spring Boot</li>
+                            <li>Django</li>
+                            <li>Angular</li>
+                            <li>Git, GitHub</li>
+                            <li>VSCode</li>
+                            <li>Figma</li>
+                            <li>Postman</li>
+                            <li>Docker</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-sitemap"></i> Metodologias</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Scrum</span>
-                        <span class="tag">Kanban</span>
-                        <span class="tag">Levantamento de Requisitos</span>
-                        <span class="tag">Criação de Diagramas</span>
+                    <div class="skill-category">
+                        <h3>Metodologias</h3>
+                        <ul>
+                            <li>Scrum</li>
+                            <li>Kanban</li>
+                            <li>Levantamento de Requisitos</li>
+                            <li>Criação de Diagramas</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Interpessoais</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Trabalho em Equipe</span>
-                        <span class="tag">Comunicação</span>
-                        <span class="tag">Resolução de Problemas</span>
+                    <div class="skill-category">
+                        <h3>Interpessoais</h3>
+                        <ul>
+                            <li>Trabalho em Equipe</li>
+                            <li>Comunicação</li>
+                            <li>Resolução de Problemas</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="experiencia" class="fade-in">
-            <div class="section-header">
-                <i class="fas fa-briefcase section-icon"></i>
-                <h2>Experiências Anteriores</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+        <section id="experiencia">
+            <h2>Experiências Anteriores</h2>
+            <div class="skills-experience-grid">
+                <div class="experience-column">
                     <div class="experience-card">
-                        <div class="card-header">
-                            <div>
-                                <h3>Estagiário de TI</h3>
-                                <span class="company">Secretaria de Saúde do Estado do Acre</span>
-                            </div>
-                            <span class="date-badge">2023</span>
-                        </div>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Rio Branco, Acre</p>
+                        <h3>Estagiário | Secretária de Saúde do Estado do Acre</h3>
+                        <p>Rio Branco - Acre (2023)</p>
                         <ul>
                             <li>Suporte técnico para problemas de infraestrutura</li>
                             <li>Desenvolvimento de um portal de transparência</li>
                         </ul>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
                     <div class="experience-card">
-                        <div class="card-header">
-                            <div>
-                                <h3>Desenvolvedor Web</h3>
-                                <span class="company">U:TECH — Empresa Júnior de TI</span>
-                            </div>
-                            <span class="date-badge">2022</span>
-                        </div>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Rio Branco, Acre</p>
-                        <p>Desenvolvimento de sites, aplicando boas práticas e entregando soluções funcionais.</p>
+                        <h3>Desenvolvedor | U:TECH - Empresa Júnior de TI</h3>
+                        <p>Rio Branco - Acre (2022)</p>
+                        <p>Desenvolvimento de sites, aplicando boas práticas e entregando soluções funcionais</p>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
                     <div class="experience-card">
-                        <div class="card-header">
-                            <div>
-                                <h3>Suporte Técnico</h3>
-                                <span class="company">Nogueira &amp; Brito LTDA</span>
-                            </div>
-                            <span class="date-badge">2020</span>
-                        </div>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Rio Branco, Acre</p>
-                        <p>Suporte técnico em manutenção, redes e resolução de problemas de TI.</p>
+                        <h3>Suporte Técnico | Nogueira & Brito LTDA</h3>
+                        <p>Rio Branco - Acre (2020)</p>
+                        <p>Suporte técnico em manutenção, redes e resolução de problemas de TI</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="educacao" class="fade-in">
-            <div class="section-header">
-                <i class="fas fa-graduation-cap section-icon"></i>
-                <h2>Educação e Cursos Relevantes</h2>
-            </div>
+        <section id="educacao">
+            <h2>Educação e Cursos Relevantes</h2>
             <div class="education-grid">
                 <div class="education-item">
-                    <div class="edu-icon"><i class="fas fa-university"></i></div>
-                    <h3>Formação Acadêmica</h3>
-                    <p><strong>Tecnologia em Sistemas para Internet</strong></p>
-                    <p class="edu-sub">5º Período · Em andamento</p>
-                    <p class="edu-sub">Instituto Federal do Acre (IFAC) — Rio Branco, Acre</p>
+                    <h3>Educação</h3>
+                    <p><strong>Sistemas para Internet</strong> (5º Período)</p>
+                    <p>Instituto Federal do Acre – Rio Branco, Acre</p>
                 </div>
                 <div class="education-item">
-                    <div class="edu-icon"><i class="fas fa-certificate"></i></div>
                     <h3>Cursos Relevantes</h3>
-                    <ul class="edu-courses">
-                        <li>
-                            <span class="course-name">Artificial Intelligence Lab</span>
-                            <span class="course-detail">UFAC · 200h</span>
-                        </li>
-                        <li>
-                            <span class="course-name">"Eu programo Robôs"</span>
-                            <span class="course-detail">IFAC · 160h</span>
-                        </li>
+                    <ul>
+                        <li>Artificial Intelligence Lab - UFAC (200h)</li>
+                        <li>"Eu programo Robôs" - IFAC (160h)</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="fade-in">
-            <div class="section-header">
-                <i class="fas fa-paper-plane section-icon"></i>
-                <h2>Envie uma Mensagem</h2>
-            </div>
+        <section id="contato">
+            <h2>Envie uma Mensagem</h2>
             <form id="contact-form" class="contact-form">
                 <div class="form-group">
                     <label for="nome">Nome Completo *</label>
@@ -223,7 +156,7 @@
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="user_email" required placeholder="seu.email@exemplo.com" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Digite um e-mail válido">
+                    <input type="email" id="email" name="user_email" required placeholder="seu.email@exemplo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Digite um e-mail válido">
                     <small class="email-validation" id="email-validation"></small>
                 </div>
                 <div class="form-group">
@@ -237,7 +170,7 @@
                     <small class="field-validation" id="mensagem-validation"></small>
                 </div>
                 <button type="submit" class="submit-btn" id="submit-btn">
-                    <span class="btn-text"><i class="fas fa-paper-plane"></i> Entre em contato</span>
+                    <span class="btn-text">Entre em contato</span>
                 </button>
                 <div id="form-message" class="form-message"></div>
             </form>
@@ -246,26 +179,14 @@
     </main>
 
     <footer>
-        <div class="footer-wave">
-            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                <path d="M0,30 C360,0 1080,60 1440,30 L1440,0 L0,0 Z" fill="#f0f4f8"/>
-            </svg>
-        </div>
-        <div class="footer-inner">
-            <p class="footer-name">Davi Brito do Nascimento</p>
-            <p class="footer-copy">© 2025 · Todos os direitos reservados.</p>
+        <div class="container">
+            <p>© 2025 Davi Brito do Nascimento. Todos os direitos reservados.</p>
             <div class="footer-links">
-                <a href="https://www.linkedin.com/in/ntcdave/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin-in"></i> LinkedIn
-                </a>
-                <a href="https://github.com/ntcdave" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
+                <a href="https://www.linkedin.com/in/ntcdave/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ntcdave" target="_blank">GitHub</a>
             </div>
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="./script.js"></script>
-</body>
+ </body>
 </html>
