@@ -23,10 +23,16 @@
         <div class="nav-content container">
             <div class="logo">Davi<span>.Brito</span></div>
             <div class="nav-links">
-                <a href="#servicos">Soluções</a>
-                <a href="#sobre">Sobre Mim</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato" class="btn-outline">Contato</a>
+                <a href="#servicos" data-i18n="nav.services">Soluções</a>
+                <a href="#sobre" data-i18n="nav.about">Sobre Mim</a>
+                <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+                <a href="#contato" class="btn-outline" data-i18n="nav.contact">Contato</a>
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle" class="lang-btn" aria-label="Toggle language">
+                    <span class="lang-flag">🇧🇷</span>
+                    <span class="lang-label">PT</span>
+                    <i class="ph ph-caret-down lang-caret"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -36,16 +42,16 @@
         <section id="home" class="hero">
             <div class="container hero-content">
                 <div class="hero-text reveal">
-                    <span class="badge">Disponível para Projetos</span>
-                    <h1 class="headline">Transformando ideias em <br><span class="gradient-text">software seguro e
+                    <span class="badge" data-i18n="hero.badge">Disponível para Projetos</span>
+                    <h1 class="headline" data-i18n-html="hero.headline">Transformando ideias em <br><span class="gradient-text">software seguro e
                             escalável</span></h1>
-                    <p class="subtitle">Engenheiro de Software focado em criar aplicações web robustas, APIs seguras e
+                    <p class="subtitle" data-i18n="hero.subtitle">Engenheiro de Software focado em criar aplicações web robustas, APIs seguras e
                         soluções que impulsionam negócios. Do levantamento de requisitos ao deploy.</p>
                     <div class="hero-actions">
                         <a href="https://wa.me/5568992475139" target="_blank" class="btn-primary">
-                            <i class="ph ph-whatsapp-logo"></i> Solicitar Orçamento
+                            <i class="ph ph-whatsapp-logo"></i> <span data-i18n="hero.cta_primary">Solicitar Orçamento</span>
                         </a>
-                        <a href="#projetos" class="btn-secondary">Ver Projetos</a>
+                        <a href="#projetos" class="btn-secondary" data-i18n="hero.cta_secondary">Ver Projetos</a>
                     </div>
                 </div>
                 <!-- Profile Image / Graphic -->
@@ -53,8 +59,8 @@
                     <div class="image-wrapper glass-panel">
                         <img src="https://gravatar.com/userimage/222267619/4c64c31f2cb7a752e0ef9f468dcca9bd.jpeg?size=256"
                             alt="Foto de Perfil de Davi Brito" class="profile-pic">
-                        <div class="glass-float tag-java"><i class="ph ph-coffee"></i> Java & Spring</div>
-                        <div class="glass-float tag-react"><i class="ph ph-code"></i> Frontend & APIs</div>
+                        <div class="glass-float tag-java"><i class="ph ph-coffee"></i> Java &amp; Spring</div>
+                        <div class="glass-float tag-react"><i class="ph ph-code"></i> Frontend &amp; APIs</div>
                     </div>
                 </div>
             </div>
@@ -64,26 +70,26 @@
         <section id="servicos" class="services">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2>Como posso ajudar seu negócio</h2>
-                    <p>Entrega de software de ponta a ponta com foco em qualidade e segurança.</p>
+                    <h2 data-i18n="services.title">Como posso ajudar seu negócio</h2>
+                    <p data-i18n="services.subtitle">Entrega de software de ponta a ponta com foco em qualidade e segurança.</p>
                 </div>
                 <div class="services-grid">
                     <div class="glass-card reveal">
                         <div class="icon-box"><i class="ph ph-layout"></i></div>
-                        <h3>Desenvolvimento Full-Stack</h3>
-                        <p>Criação de aplicações web responsivas e dinâmicas (React, Angular) com back-ends robustos
+                        <h3 data-i18n="services.s1.title">Desenvolvimento Full-Stack</h3>
+                        <p data-i18n="services.s1.desc">Criação de aplicações web responsivas e dinâmicas (React, Angular) com back-ends robustos
                             baseados em Java ou Python.</p>
                     </div>
                     <div class="glass-card reveal delay-1">
                         <div class="icon-box"><i class="ph ph-lock-key"></i></div>
-                        <h3>APIs Seguras & Integrações</h3>
-                        <p>Desenvolvimento e consumo de APIs RESTful usando Spring Boot e Django. Autenticação,
+                        <h3 data-i18n="services.s2.title">APIs Seguras &amp; Integrações</h3>
+                        <p data-i18n="services.s2.desc">Desenvolvimento e consumo de APIs RESTful usando Spring Boot e Django. Autenticação,
                             autorização e arquitetura baseada em microsserviços.</p>
                     </div>
                     <div class="glass-card reveal delay-2">
                         <div class="icon-box"><i class="ph ph-shield-check"></i></div>
-                        <h3>Consultoria em Software</h3>
-                        <p>Análise de requisitos, modelagem de banco de dados e modernização de plataformas legadas com
+                        <h3 data-i18n="services.s3.title">Consultoria em Software</h3>
+                        <p data-i18n="services.s3.desc">Análise de requisitos, modelagem de banco de dados e modernização de plataformas legadas com
                             metodologias ágeis (Scrum/Kanban).</p>
                     </div>
                 </div>
@@ -94,28 +100,28 @@
         <section id="projetos" class="projects">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2>Projetos em Destaque</h2>
-                    <p>Casos práticos de problemas resolvidos com tecnologia.</p>
+                    <h2 data-i18n="projects.title">Projetos em Destaque</h2>
+                    <p data-i18n="projects.subtitle">Casos práticos de problemas resolvidos com tecnologia.</p>
                 </div>
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-glass-card reveal">
                         <div class="project-content">
-                            <h3>Portal de Transparência</h3>
+                            <h3 data-i18n="projects.p1.title">Portal de Transparência</h3>
                             <span class="project-role">Secretaria de Saúde - Acre</span>
-                            <p>Desenvolvimento de fluxo de dados abertos para visualização de estatísticas públicas de
+                            <p data-i18n="projects.p1.desc">Desenvolvimento de fluxo de dados abertos para visualização de estatísticas públicas de
                                 forma segura e acessível.</p>
                             <div class="tech-stack">
-                                <span>Java</span><span>APIs</span><span>Segurança</span>
+                                <span>Java</span><span>APIs</span><span data-i18n="projects.tag.security">Segurança</span>
                             </div>
                         </div>
                     </div>
                     <!-- Project 2 -->
                     <div class="project-glass-card reveal delay-1">
                         <div class="project-content">
-                            <h3>Aplicações Web Otimizadas</h3>
+                            <h3 data-i18n="projects.p2.title">Aplicações Web Otimizadas</h3>
                             <span class="project-role">U:TECH Integrada</span>
-                            <p>Construção de sites e portais com excelentes práticas de UX/UI, convertendo visitantes em
+                            <p data-i18n="projects.p2.desc">Construção de sites e portais com excelentes práticas de UX/UI, convertendo visitantes em
                                 clientes, sob metodologias ágeis.</p>
                             <div class="tech-stack">
                                 <span>JavaScript</span><span>React</span><span>Figma</span>
@@ -125,7 +131,7 @@
                 </div>
                 <div class="cta-center reveal delay-2">
                     <a href="https://github.com/ntcdave" target="_blank" class="btn-outline-glow">
-                        <i class="ph ph-github-logo"></i> Explorar Repositórios no GitHub
+                        <i class="ph ph-github-logo"></i> <span data-i18n="projects.github_cta">Explorar Repositórios no GitHub</span>
                     </a>
                 </div>
             </div>
@@ -136,40 +142,40 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-text glass-card reveal">
-                        <h2>Sobre Mim</h2>
-                        <p>Sou estudante de Sistemas para Internet pelo IFAC, com mais de dois anos de experiência
+                        <h2 data-i18n="about.title">Sobre Mim</h2>
+                        <p data-i18n="about.p1">Sou estudante de Sistemas para Internet pelo IFAC, com mais de dois anos de experiência
                             prática na engenharia de software.</p>
-                        <p>No meu percurso profissional, da U:TECH à Secretaria de Saúde do Acre, ajudei a desenhar
+                        <p data-i18n="about.p2">No meu percurso profissional, da U:TECH à Secretaria de Saúde do Acre, ajudei a desenhar
                             arquiteturas, dar suporte à infraestrutura e entregar funcionalidades escaláveis para
                             portais web.</p>
                         <ul class="check-list">
-                            <li><i class="ph ph-check-circle"></i> Nível de Inglês: B2 (Intermediário-avançado)</li>
-                            <li><i class="ph ph-check-circle"></i> Dominância ágil: Scrum / Kanban</li>
-                            <li><i class="ph ph-check-circle"></i> Foco na resolução de problemas complexos</li>
+                            <li><i class="ph ph-check-circle"></i> <span data-i18n="about.item1">Nível de Inglês: B2 (Intermediário-avançado)</span></li>
+                            <li><i class="ph ph-check-circle"></i> <span data-i18n="about.item2">Dominância ágil: Scrum / Kanban</span></li>
+                            <li><i class="ph ph-check-circle"></i> <span data-i18n="about.item3">Foco na resolução de problemas complexos</span></li>
                         </ul>
                     </div>
                     <div class="experience-timeline reveal delay-1">
-                        <h2>Trajetória Tecnológica</h2>
+                        <h2 data-i18n="about.timeline_title">Trajetória Tecnológica</h2>
                         <div class="timeline">
                             <div class="timeline-item">
                                 <div class="timeline-dot"></div>
-                                <h4>Graduação em Sistemas para Internet (5º Período)</h4>
-                                <span>Instituto Federal do Acre</span>
+                                <h4 data-i18n="about.t1.title">Graduação em Sistemas para Internet (5º Período)</h4>
+                                <span data-i18n="about.t1.org">Instituto Federal do Acre</span>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-dot"></div>
-                                <h4>Estagiário | Infra e Sistemas</h4>
-                                <span>Secretária de Saúde do Estado do Acre (2023)</span>
+                                <h4 data-i18n="about.t2.title">Estagiário | Infra e Sistemas</h4>
+                                <span data-i18n="about.t2.org">Secretária de Saúde do Estado do Acre (2023)</span>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-dot"></div>
-                                <h4>Desenvolvedor Frontend</h4>
-                                <span>U:TECH - Empresa Júnior de TI (2022)</span>
+                                <h4 data-i18n="about.t3.title">Desenvolvedor Frontend</h4>
+                                <span data-i18n="about.t3.org">U:TECH - Empresa Júnior de TI (2022)</span>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-dot"></div>
-                                <h4>Suporte Técnico</h4>
-                                <span>Nogueira & Brito LTDA (2020)</span>
+                                <h4 data-i18n="about.t4.title">Suporte Técnico</h4>
+                                <span data-i18n="about.t4.org">Nogueira &amp; Brito LTDA (2020)</span>
                             </div>
                         </div>
                     </div>
@@ -182,8 +188,8 @@
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-info reveal">
-                        <h2>Vamos construir <br><span class="gradient-text">algo incrível juntos?</span></h2>
-                        <p>Estou disponível para novos projetos, parcerias ou propostas de desenvolvimento de software.
+                        <h2 data-i18n-html="contact.heading">Vamos construir <br><span class="gradient-text">algo incrível juntos?</span></h2>
+                        <p data-i18n="contact.desc">Estou disponível para novos projetos, parcerias ou propostas de desenvolvimento de software.
                             Mande uma mensagem pelo formulário ou conecte-se diretamente através das minhas redes.</p>
                         <div class="info-items">
                             <div class="info-item">
@@ -203,7 +209,7 @@
                             <div class="info-item">
                                 <i class="ph ph-map-pin"></i>
                                 <div>
-                                    <h5>Local Base</h5>
+                                    <h5 data-i18n="contact.location_label">Local Base</h5>
                                     <span>Rio Branco, Acre - Brasil</span>
                                 </div>
                             </div>
@@ -219,29 +225,29 @@
                     <div class="contact-form-wrapper glass-card reveal delay-1">
                         <form id="contact-form" class="contact-form">
                             <div class="form-group">
-                                <label for="nome">Nome Completo</label>
-                                <input type="text" id="nome" name="user_name" required placeholder="Digite seu nome">
+                                <label for="nome" data-i18n="form.name_label">Nome Completo</label>
+                                <input type="text" id="nome" name="user_name" required data-i18n-placeholder="form.name_placeholder" placeholder="Digite seu nome">
                             </div>
                             <div class="form-group">
-                                <label for="email">E-mail Comercial</label>
+                                <label for="email" data-i18n="form.email_label">E-mail Comercial</label>
                                 <input type="email" id="email" name="user_email" required
-                                    placeholder="seu.email@exemplo.com">
+                                    data-i18n-placeholder="form.email_placeholder" placeholder="seu.email@exemplo.com">
                                 <small class="email-validation" id="email-validation"></small>
                             </div>
                             <div class="form-group">
-                                <label for="assunto">Motivo do Contato</label>
+                                <label for="assunto" data-i18n="form.subject_label">Motivo do Contato</label>
                                 <input type="text" id="assunto" name="subject" required
-                                    placeholder="Assunto (mínimo 10 caracteres)">
+                                    data-i18n-placeholder="form.subject_placeholder" placeholder="Assunto (mínimo 10 caracteres)">
                                 <small class="field-validation" id="assunto-validation"></small>
                             </div>
                             <div class="form-group">
-                                <label for="mensagem">Mensagem / Escopo do Projeto</label>
+                                <label for="mensagem" data-i18n="form.message_label">Mensagem / Escopo do Projeto</label>
                                 <textarea id="mensagem" name="message" rows="5" required
-                                    placeholder="Conte-me sobre os desafios do seu negócio..."></textarea>
+                                    data-i18n-placeholder="form.message_placeholder" placeholder="Conte-me sobre os desafios do seu negócio..."></textarea>
                                 <small class="field-validation" id="mensagem-validation"></small>
                             </div>
                             <button type="submit" class="submit-btn" id="submit-btn">
-                                <span class="btn-text">Enviar Mensagem</span>
+                                <span class="btn-text" data-i18n="form.submit">Enviar Mensagem</span>
                                 <i class="ph ph-paper-plane-right"></i>
                             </button>
                             <div id="form-message" class="form-message"></div>
@@ -255,7 +261,7 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">Davi<span>.Brito</span></div>
-            <p>© 2026 Direitos Reservados. Projetado para conversão & escalabilidade.</p>
+            <p data-i18n="footer.copy">© 2026 Direitos Reservados. Projetado para conversão &amp; escalabilidade.</p>
         </div>
     </footer>
 </body>

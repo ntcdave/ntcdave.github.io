@@ -196,6 +196,51 @@ nav.scrolled {
   color: var(--text-primary);
 }
 
+/* LANGUAGE TOGGLE BUTTON */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent-turquoise);
+  background: rgba(34, 211, 238, 0.06);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  background: rgba(34, 211, 238, 0.12);
+  border-color: var(--accent-turquoise);
+  box-shadow: 0 0 14px rgba(34, 211, 238, 0.2);
+}
+
+.lang-flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.lang-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.lang-caret {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.lang-btn.is-en .lang-caret {
+  transform: rotate(180deg);
+}
+
 /* SECTION PADDING */
 section {
   padding: 100px 0;
