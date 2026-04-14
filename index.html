@@ -1,192 +1,263 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davi Brito do Nascimento - Desenvolvedor de Software</title>
+    <title>Davi Brito | Software Seguro e Escalável</title>
+    <!-- Fonts: Outfit and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Styles & Scripts -->
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./script.js" defer></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="profile-section">
-                    <img src="https://gravatar.com/userimage/222267619/2ac8171fe480974b766e54bb39a0e1c7.jpeg?size=256&cache=1752436480032" alt="Foto de Perfil de Davi Brito" class="profile-pic">
-                </div>
-                <div class="info-section">
-                    <h1>Davi Brito do Nascimento</h1>
-                    <h2>Vaga em Desenvolvimento de Software</h2>
-                    
-                    <table class="contact-table">
-                        <tr>
-                            <td><strong>Local:</strong></td>
-                            <td>Rio Branco, Acre</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Celular:</strong></td>
-                            <td>(68) 99237-3632</td>
-                        </tr>
-                        <tr>
-                            <td><strong>E-mail:</strong></td>
-                            <td>davibrito.tech@gmail.com</td>
-                        </tr>
-                    </table>
 
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/ntcdave/" target="_blank">LinkedIn</a>
-                        <a href="https://github.com/ntcdave" target="_blank">GitHub</a>
-                        <a href="https://wa.me/5568992373632" target="_blank" class="whatsapp-btn">WhatsApp</a>
-                    </div>
-                </div>
+<body>
+    <nav id="navbar">
+        <div class="nav-content container">
+            <div class="logo">Davi<span>.Brito</span></div>
+            <div class="nav-links">
+                <a href="#servicos">Soluções</a>
+                <a href="#sobre">Sobre Mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato" class="btn-outline">Contato</a>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Estudante de Tecnologia em Sistemas para Internet, com mais de dois anos de experiência prática em engenharia de software.</p>
-            <p>Atuei no desenvolvimento de aplicações web, cobrindo desde análise de requisitos até manutenção.</p>
-            <p>Tenho domínio em Java, Python, JavaScript e frameworks como Spring, Django e React. Experiência com metodologias ágeis (Scrum, Kanban).</p>
-            <p>Busco oportunidade de estágio para aplicar minha bagagem técnica e evoluir como Analista de Sistemas.</p>
-            <p><strong>Nível de inglês:</strong> Intermediário-avançado (B2).</p>
-        </section>
-
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <div class="skills-experience-grid">
-                <div class="skills-column">
-                    <div class="skill-category">
-                        <h3>Linguagens</h3>
-                        <ul>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>C++</li>
-                        </ul>
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text reveal">
+                    <span class="badge">Disponível para Projetos</span>
+                    <h1 class="headline">Transformando ideias em <br><span class="gradient-text">software seguro e
+                            escalável</span></h1>
+                    <p class="subtitle">Engenheiro de Software focado em criar aplicações web robustas, APIs seguras e
+                        soluções que impulsionam negócios. Do levantamento de requisitos ao deploy.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5568992475139" target="_blank" class="btn-primary">
+                            <i class="ph ph-whatsapp-logo"></i> Solicitar Orçamento
+                        </a>
+                        <a href="#projetos" class="btn-secondary">Ver Projetos</a>
                     </div>
-                    <div class="skill-category">
-                        <h3>Frameworks & Tecnologias</h3>
-                        <ul>
-                            <li>Spring Boot</li>
-                            <li>Django</li>
-                            <li>Angular</li>
-                            <li>Git, GitHub</li>
-                            <li>VSCode</li>
-                            <li>Figma</li>
-                            <li>Postman</li>
-                            <li>Docker</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Metodologias</h3>
-                        <ul>
-                            <li>Scrum</li>
-                            <li>Kanban</li>
-                            <li>Levantamento de Requisitos</li>
-                            <li>Criação de Diagramas</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Interpessoais</h3>
-                        <ul>
-                            <li>Trabalho em Equipe</li>
-                            <li>Comunicação</li>
-                            <li>Resolução de Problemas</li>
-                        </ul>
+                </div>
+                <!-- Profile Image / Graphic -->
+                <div class="hero-image reveal delay-1">
+                    <div class="image-wrapper glass-panel">
+                        <img src="https://gravatar.com/userimage/222267619/2ac8171fe480974b766e54bb39a0e1c7.jpeg?size=512&cache=1752436480032"
+                            alt="Foto de Perfil de Davi Brito" class="profile-pic">
+                        <div class="glass-float tag-java"><i class="ph ph-coffee"></i> Java & Spring</div>
+                        <div class="glass-float tag-react"><i class="ph ph-code"></i> Frontend & APIs</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="experiencia">
-            <h2>Experiências Anteriores</h2>
-            <div class="skills-experience-grid">
-                <div class="experience-column">
-                    <div class="experience-card">
-                        <h3>Estagiário | Secretária de Saúde do Estado do Acre</h3>
-                        <p>Rio Branco - Acre (2023)</p>
-                        <ul>
-                            <li>Suporte técnico para problemas de infraestrutura</li>
-                            <li>Desenvolvimento de um portal de transparência</li>
+        <!-- Services Section -->
+        <section id="servicos" class="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Como posso ajudar seu negócio</h2>
+                    <p>Entrega de software de ponta a ponta com foco em qualidade e segurança.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="glass-card reveal">
+                        <div class="icon-box"><i class="ph ph-layout"></i></div>
+                        <h3>Desenvolvimento Full-Stack</h3>
+                        <p>Criação de aplicações web responsivas e dinâmicas (React, Angular) com back-ends robustos
+                            baseados em Java ou Python.</p>
+                    </div>
+                    <div class="glass-card reveal delay-1">
+                        <div class="icon-box"><i class="ph ph-lock-key"></i></div>
+                        <h3>APIs Seguras & Integrações</h3>
+                        <p>Desenvolvimento e consumo de APIs RESTful usando Spring Boot e Django. Autenticação,
+                            autorização e arquitetura baseada em microsserviços.</p>
+                    </div>
+                    <div class="glass-card reveal delay-2">
+                        <div class="icon-box"><i class="ph ph-shield-check"></i></div>
+                        <h3>Consultoria em Software</h3>
+                        <p>Análise de requisitos, modelagem de banco de dados e modernização de plataformas legadas com
+                            metodologias ágeis (Scrum/Kanban).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof & Projects Section -->
+        <section id="projetos" class="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Projetos em Destaque</h2>
+                    <p>Casos práticos de problemas resolvidos com tecnologia.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-glass-card reveal">
+                        <div class="project-content">
+                            <h3>Portal de Transparência</h3>
+                            <span class="project-role">Secretaria de Saúde - Acre</span>
+                            <p>Desenvolvimento de fluxo de dados abertos para visualização de estatísticas públicas de
+                                forma segura e acessível.</p>
+                            <div class="tech-stack">
+                                <span>Java</span><span>APIs</span><span>Segurança</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-glass-card reveal delay-1">
+                        <div class="project-content">
+                            <h3>Aplicações Web Otimizadas</h3>
+                            <span class="project-role">U:TECH Integrada</span>
+                            <p>Construção de sites e portais com excelentes práticas de UX/UI, convertendo visitantes em
+                                clientes, sob metodologias ágeis.</p>
+                            <div class="tech-stack">
+                                <span>JavaScript</span><span>React</span><span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-center reveal delay-2">
+                    <a href="https://github.com/ntcdave" target="_blank" class="btn-outline-glow">
+                        <i class="ph ph-github-logo"></i> Explorar Repositórios no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Experience Section -->
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text glass-card reveal">
+                        <h2>Sobre Mim</h2>
+                        <p>Sou estudante de Sistemas para Internet pelo IFAC, com mais de dois anos de experiência
+                            prática na engenharia de software.</p>
+                        <p>No meu percurso profissional, da U:TECH à Secretaria de Saúde do Acre, ajudei a desenhar
+                            arquiteturas, dar suporte à infraestrutura e entregar funcionalidades escaláveis para
+                            portais web.</p>
+                        <ul class="check-list">
+                            <li><i class="ph ph-check-circle"></i> Nível de Inglês: B2 (Intermediário-avançado)</li>
+                            <li><i class="ph ph-check-circle"></i> Dominância ágil: Scrum / Kanban</li>
+                            <li><i class="ph ph-check-circle"></i> Foco na resolução de problemas complexos</li>
                         </ul>
                     </div>
-
-                    <div class="experience-card">
-                        <h3>Desenvolvedor | U:TECH - Empresa Júnior de TI</h3>
-                        <p>Rio Branco - Acre (2022)</p>
-                        <p>Desenvolvimento de sites, aplicando boas práticas e entregando soluções funcionais</p>
-                    </div>
-
-                    <div class="experience-card">
-                        <h3>Suporte Técnico | Nogueira & Brito LTDA</h3>
-                        <p>Rio Branco - Acre (2020)</p>
-                        <p>Suporte técnico em manutenção, redes e resolução de problemas de TI</p>
+                    <div class="experience-timeline reveal delay-1">
+                        <h2>Trajetória Tecnológica</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4>Graduação em Sistemas para Internet (5º Período)</h4>
+                                <span>Instituto Federal do Acre</span>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4>Estagiário | Infra e Sistemas</h4>
+                                <span>Secretária de Saúde do Estado do Acre (2023)</span>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4>Desenvolvedor Frontend</h4>
+                                <span>U:TECH - Empresa Júnior de TI (2022)</span>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h4>Suporte Técnico</h4>
+                                <span>Nogueira & Brito LTDA (2020)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="educacao">
-            <h2>Educação e Cursos Relevantes</h2>
-            <div class="education-grid">
-                <div class="education-item">
-                    <h3>Educação</h3>
-                    <p><strong>Sistemas para Internet</strong> (5º Período)</p>
-                    <p>Instituto Federal do Acre – Rio Branco, Acre</p>
-                </div>
-                <div class="education-item">
-                    <h3>Cursos Relevantes</h3>
-                    <ul>
-                        <li>Artificial Intelligence Lab - UFAC (200h)</li>
-                        <li>"Eu programo Robôs" - IFAC (160h)</li>
-                    </ul>
+        <!-- Contact Section -->
+        <section id="contato" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h2>Vamos construir <br><span class="gradient-text">algo incrível juntos?</span></h2>
+                        <p>Estou disponível para novos projetos, parcerias ou propostas de desenvolvimento de software.
+                            Mande uma mensagem pelo formulário ou conecte-se diretamente através das minhas redes.</p>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="ph ph-envelope-simple"></i>
+                                <div>
+                                    <h5>E-mail</h5>
+                                    <span>davibrito.tech@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="ph ph-whatsapp-logo"></i>
+                                <div>
+                                    <h5>WhatsApp</h5>
+                                    <span>(68) 99247-5139</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="ph ph-map-pin"></i>
+                                <div>
+                                    <h5>Local Base</h5>
+                                    <span>Rio Branco, Acre - Brasil</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-tags">
+                            <a href="https://www.linkedin.com/in/ntcdave/" target="_blank" class="social-btn"><i
+                                    class="ph ph-linkedin-logo"></i> LinkedIn</a>
+                            <a href="https://github.com/ntcdave" target="_blank" class="social-btn"><i
+                                    class="ph ph-github-logo"></i> GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card reveal delay-1">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="user_name" required placeholder="Digite seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail Comercial</label>
+                                <input type="email" id="email" name="user_email" required
+                                    placeholder="seu.email@exemplo.com">
+                                <small class="email-validation" id="email-validation"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Motivo do Contato</label>
+                                <input type="text" id="assunto" name="subject" required
+                                    placeholder="Assunto (mínimo 10 caracteres)">
+                                <small class="field-validation" id="assunto-validation"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem / Escopo do Projeto</label>
+                                <textarea id="mensagem" name="message" rows="5" required
+                                    placeholder="Conte-me sobre os desafios do seu negócio..."></textarea>
+                                <small class="field-validation" id="mensagem-validation"></small>
+                            </div>
+                            <button type="submit" class="submit-btn" id="submit-btn">
+                                <span class="btn-text">Enviar Mensagem</span>
+                                <i class="ph ph-paper-plane-right"></i>
+                            </button>
+                            <div id="form-message" class="form-message"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="contato">
-            <h2>Envie uma Mensagem</h2>
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <label for="nome">Nome Completo *</label>
-                    <input type="text" id="nome" name="user_name" required placeholder="Digite seu nome completo">
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="user_email" required placeholder="seu.email@exemplo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Digite um e-mail válido">
-                    <small class="email-validation" id="email-validation"></small>
-                </div>
-                <div class="form-group">
-                    <label for="assunto">Assunto *</label>
-                    <input type="text" id="assunto" name="subject" required placeholder="Assunto da mensagem" minlength="10" title="O assunto deve ter pelo menos 10 caracteres">
-                    <small class="field-validation" id="assunto-validation"></small>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Mensagem *</label>
-                    <textarea id="mensagem" name="message" rows="6" required placeholder="Escreva sua mensagem aqui..." minlength="10" title="A mensagem deve ter pelo menos 10 caracteres"></textarea>
-                    <small class="field-validation" id="mensagem-validation"></small>
-                </div>
-                <button type="submit" class="submit-btn" id="submit-btn">
-                    <span class="btn-text">Entre em contato</span>
-                </button>
-                <div id="form-message" class="form-message"></div>
-            </form>
-        </section>
-
     </main>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Davi Brito do Nascimento. Todos os direitos reservados.</p>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/ntcdave/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/ntcdave" target="_blank">GitHub</a>
-            </div>
+        <div class="container footer-content">
+            <div class="footer-logo">Davi<span>.Brito</span></div>
+            <p>© 2026 Direitos Reservados. Projetado para conversão & escalabilidade.</p>
         </div>
     </footer>
+</body>
 
- </body>
 </html>
