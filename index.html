@@ -4,266 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davi Brito | Software Seguro e Escalável</title>
-    <!-- Fonts: Outfit and Inter -->
+    <title>Davi Brito · Software Engineer · Rio Branco</title>
+    <meta name="description" content="Davi Brito — Software Engineer em Rio Branco. Java, Python, TypeScript. APIs robustas e soluções escaláveis, do levantamento de requisitos ao deploy.">
+    <meta name="author" content="Davi Brito">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ntcdave.github.io/">
+    <meta property="og:title" content="Davi Brito · Software Engineer · Rio Branco">
+    <meta property="og:description" content="Software Engineer em Rio Branco. Java · Python · TypeScript. Rinha Backend, SDR Edge AI, TaskMaster.">
+    <meta property="og:url" content="https://ntcdave.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Davi Brito · Software Engineer · Rio Branco">
+    <meta name="twitter:description" content="Java · Python · TypeScript. APIs robustas e soluções escaláveis.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!-- Styles & Scripts -->
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Davi Brito",
+        "url": "https://ntcdave.github.io/",
+        "jobTitle": "Software Engineer",
+        "description": "Software Engineer em Rio Branco. Java, Python, TypeScript.",
+        "email": "mailto:davibrito.tech@gmail.com",
+        "sameAs": ["https://github.com/ntcdave", "https://www.linkedin.com/in/ntcdave/"],
+        "alumniOf": { "@type": "EducationalOrganization", "name": "Instituto Federal do Acre" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Rio Branco", "addressCountry": "BR" }
+    }
+    </script>
 </head>
 
 <body>
-    <nav id="navbar">
-        <div class="nav-content container">
-            <div class="logo">Davi<span>.Brito</span></div>
-            <div class="nav-links">
-                <a href="#servicos" data-i18n="nav.services">Soluções</a>
-                <a href="#sobre" data-i18n="nav.about">Sobre Mim</a>
-                <a href="#projetos" data-i18n="nav.projects">Projetos</a>
-                <a href="#contato" class="btn-outline" data-i18n="nav.contact">Contato</a>
-                <!-- Language Toggle Button -->
-                <button id="lang-toggle" class="lang-btn" aria-label="Toggle language">
-                    <span class="lang-flag">🇧🇷</span>
-                    <span class="lang-label">PT</span>
-                    <i class="ph ph-caret-down lang-caret"></i>
-                </button>
-            </div>
+    <a class="skip-link" href="#conteudo" data-i18n="a11y.skip">Pular para o conteúdo</a>
+
+    <nav class="t-nav" aria-label="Principal">
+        <a class="t-brand" href="#topo">~/davibrito</a>
+        <div class="t-nav-links">
+            <a href="#sobre" data-i18n="nav.about">sobre</a>
+            <a href="#projetos" data-i18n="nav.projects">projetos</a>
+            <a href="#contato" data-i18n="nav.contact">contato</a>
+            <button id="palette-open" class="t-kbd-btn" aria-label="Abrir paleta de comandos">⌘K</button>
+            <button id="lang-toggle" class="lang-btn" aria-label="Switch to English">
+                <span class="lang-flag">🇧🇷</span><span class="lang-label">PT</span>
+            </button>
         </div>
+        <button class="t-ham" id="nav-ham" aria-label="Alternar navegação" aria-expanded="false">≡</button>
     </nav>
 
-    <main>
-        <!-- Home / Hero Section -->
-        <section id="home" class="hero">
-            <div class="container hero-content">
-                <div class="hero-text reveal">
-                    <span class="badge" data-i18n="hero.badge">Disponível para Projetos</span>
-                    <h1 class="headline" data-i18n-html="hero.headline">Transformando ideias em <br><span class="gradient-text">software seguro e
-                            escalável</span></h1>
-                    <p class="subtitle" data-i18n="hero.subtitle">Engenheiro de Software focado em criar aplicações web robustas, APIs seguras e
-                        soluções que impulsionam negócios. Do levantamento de requisitos ao deploy.</p>
-                    <div class="hero-actions">
-                        <a href="https://wa.me/5568981052465" target="_blank" class="btn-primary">
-                            <i class="ph ph-whatsapp-logo"></i> <span data-i18n="hero.cta_primary">Solicitar Orçamento</span>
-                        </a>
-                        <a href="#projetos" class="btn-secondary" data-i18n="hero.cta_secondary">Ver Projetos</a>
-                    </div>
-                </div>
-                <!-- Profile Image / Graphic -->
-                <div class="hero-image reveal delay-1">
-                    <div class="image-wrapper glass-panel">
-                        <img src="https://gravatar.com/userimage/222267619/cbb8745a1e3baaba646d4f84c20ab60c.jpeg?size=256"
-                            alt="Foto de Perfil de Davi Brito" class="profile-pic">
-                        <div class="glass-float tag-java"><i class="ph ph-coffee"></i> Java &amp; Spring</div>
-                        <div class="glass-float tag-react"><i class="ph ph-code"></i> Frontend &amp; APIs</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main class="t-main" id="conteudo">
+        <div class="t-col" id="topo">
+            <div class="t-rule-accent" aria-hidden="true"></div>
 
-        <!-- Services Section -->
-        <section id="servicos" class="services">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2 data-i18n="services.title">Como posso ajudar seu negócio</h2>
-                    <p data-i18n="services.subtitle">Entrega de software de ponta a ponta com foco em qualidade e segurança.</p>
-                </div>
-                <div class="services-grid">
-                    <div class="glass-card reveal">
-                        <div class="icon-box"><i class="ph ph-layout"></i></div>
-                        <h3 data-i18n="services.s1.title">Desenvolvimento Full-Stack</h3>
-                        <p data-i18n="services.s1.desc">Criação de aplicações web responsivas e dinâmicas (React, Angular) com back-ends robustos
-                            baseados em Java ou Python.</p>
-                    </div>
-                    <div class="glass-card reveal delay-1">
-                        <div class="icon-box"><i class="ph ph-lock-key"></i></div>
-                        <h3 data-i18n="services.s2.title">APIs Seguras &amp; Integrações</h3>
-                        <p data-i18n="services.s2.desc">Desenvolvimento e consumo de APIs RESTful usando Spring Boot e Django. Autenticação,
-                            autorização e arquitetura baseada em microsserviços.</p>
-                    </div>
-                    <div class="glass-card reveal delay-2">
-                        <div class="icon-box"><i class="ph ph-shield-check"></i></div>
-                        <h3 data-i18n="services.s3.title">Consultoria em Software</h3>
-                        <p data-i18n="services.s3.desc">Análise de requisitos, modelagem de banco de dados e modernização de plataformas legadas com
-                            metodologias ágeis (Scrum/Kanban).</p>
-                    </div>
-                </div>
+            <div class="t-status">
+                <span><span class="dot" aria-hidden="true">●</span> <span data-i18n="status.now">construindo</span><span class="cursor" aria-hidden="true"></span></span>
+                <span>davibrito · v1.0</span>
             </div>
-        </section>
 
-        <!-- Social Proof & Projects Section -->
-        <section id="projetos" class="projects">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2 data-i18n="projects.title">Projetos em Destaque</h2>
-                    <p data-i18n="projects.subtitle">Casos práticos de problemas resolvidos com tecnologia.</p>
-                </div>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-glass-card reveal">
-                        <div class="project-content">
-                            <h3 data-i18n="projects.p1.title">Portal de Transparência</h3>
-                            <span class="project-role">Secretaria de Saúde - Acre</span>
-                            <p data-i18n="projects.p1.desc">Desenvolvimento de fluxo de dados abertos para visualização de estatísticas públicas de
-                                forma segura e acessível.</p>
-                            <div class="tech-stack">
-                                <span>Java</span><span>APIs</span><span data-i18n="projects.tag.security">Segurança</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="project-glass-card reveal delay-1">
-                        <div class="project-content">
-                            <h3 data-i18n="projects.p2.title">Aplicações Web Otimizadas</h3>
-                            <span class="project-role">U:TECH Integrada</span>
-                            <p data-i18n="projects.p2.desc">Construção de sites e portais com excelentes práticas de UX/UI, convertendo visitantes em
-                                clientes, sob metodologias ágeis.</p>
-                            <div class="tech-stack">
-                                <span>JavaScript</span><span>React</span><span>Figma</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cta-center reveal delay-2">
-                    <a href="https://github.com/ntcdave" target="_blank" class="btn-outline-glow">
-                        <i class="ph ph-github-logo"></i> <span data-i18n="projects.github_cta">Explorar Repositórios no GitHub</span>
-                    </a>
-                </div>
-            </div>
-        </section>
+            <header class="t-hero">
+                <img class="t-photo"
+                    src="https://gravatar.com/userimage/222267619/cbb8745a1e3baaba646d4f84c20ab60c.jpeg?size=256"
+                    alt="Foto de Davi Brito" width="96" height="96" fetchpriority="high">
+                <h1><span data-i18n="hero.first">davi</span> <span class="accent" data-i18n="hero.last">brito</span></h1>
+                <p class="t-tagline" data-i18n-html="hero.tagline">software engineer em rio branco. <span>java · python · typescript.</span></p>
+            </header>
 
-        <!-- About & Experience Section -->
-        <section id="sobre" class="about">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text glass-card reveal">
-                        <h2 data-i18n="about.title">Sobre Mim</h2>
-                        <p data-i18n="about.p1">Sou estudante de Sistemas para Internet pelo IFAC, com mais de dois anos de experiência
-                            prática na engenharia de software.</p>
-                        <p data-i18n="about.p2">No meu percurso profissional, da U:TECH à Secretaria de Saúde do Acre, ajudei a desenhar
-                            arquiteturas, dar suporte à infraestrutura e entregar funcionalidades escaláveis para
-                            portais web.</p>
-                        <ul class="check-list">
-                            <li><i class="ph ph-check-circle"></i> <span data-i18n="about.item1">Nível de Inglês: B2 (Intermediário-avançado)</span></li>
-                            <li><i class="ph ph-check-circle"></i> <span data-i18n="about.item2">Dominância ágil: Scrum / Kanban</span></li>
-                            <li><i class="ph ph-check-circle"></i> <span data-i18n="about.item3">Foco na resolução de problemas complexos</span></li>
-                        </ul>
-                    </div>
-                    <div class="experience-timeline reveal delay-1">
-                        <h2 data-i18n="about.timeline_title">Trajetória Tecnológica</h2>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <h4 data-i18n="about.t1.title">Graduação em Sistemas para Internet (5º Período)</h4>
-                                <span data-i18n="about.t1.org">Instituto Federal do Acre</span>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <h4 data-i18n="about.t2.title">Estagiário | Infra e Sistemas</h4>
-                                <span data-i18n="about.t2.org">Secretária de Saúde do Estado do Acre (2023)</span>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <h4 data-i18n="about.t3.title">Desenvolvedor Frontend</h4>
-                                <span data-i18n="about.t3.org">U:TECH - Empresa Júnior de TI (2022)</span>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <h4 data-i18n="about.t4.title">Suporte Técnico</h4>
-                                <span data-i18n="about.t4.org">Nogueira &amp; Brito LTDA (2020)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <hr class="t-sep">
 
-        <!-- Contact Section -->
-        <section id="contato" class="contact">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info reveal">
-                        <h2 data-i18n-html="contact.heading">Vamos construir <br><span class="gradient-text">algo incrível juntos?</span></h2>
-                        <p data-i18n="contact.desc">Estou disponível para novos projetos, parcerias ou propostas de desenvolvimento de software.
-                            Mande uma mensagem pelo formulário ou conecte-se diretamente através das minhas redes.</p>
-                        <div class="info-items">
-                            <div class="info-item">
-                                <i class="ph ph-envelope-simple"></i>
-                                <div>
-                                    <h5>E-mail</h5>
-                                    <span>davibrito.tech@gmail.com</span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <i class="ph ph-whatsapp-logo"></i>
-                                <div>
-                                    <h5>WhatsApp</h5>
-                                    <span>(68) 99247-5139</span>
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <i class="ph ph-map-pin"></i>
-                                <div>
-                                    <h5 data-i18n="contact.location_label">Local Base</h5>
-                                    <span>Rio Branco, Acre - Brasil</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="social-tags">
-                            <a href="https://www.linkedin.com/in/ntcdave/" target="_blank" class="social-btn"><i
-                                    class="ph ph-linkedin-logo"></i> LinkedIn</a>
-                            <a href="https://github.com/ntcdave" target="_blank" class="social-btn"><i
-                                    class="ph ph-github-logo"></i> GitHub</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-form-wrapper glass-card reveal delay-1">
-                        <form id="contact-form" class="contact-form">
-                            <div class="form-group">
-                                <label for="nome" data-i18n="form.name_label">Nome Completo</label>
-                                <input type="text" id="nome" name="user_name" required data-i18n-placeholder="form.name_placeholder" placeholder="Digite seu nome">
-                            </div>
-                            <div class="form-group">
-                                <label for="email" data-i18n="form.email_label">E-mail Comercial</label>
-                                <input type="email" id="email" name="user_email" required
-                                    data-i18n-placeholder="form.email_placeholder" placeholder="seu.email@exemplo.com">
-                                <small class="email-validation" id="email-validation"></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="assunto" data-i18n="form.subject_label">Motivo do Contato</label>
-                                <input type="text" id="assunto" name="subject" required
-                                    data-i18n-placeholder="form.subject_placeholder" placeholder="Assunto (mínimo 10 caracteres)">
-                                <small class="field-validation" id="assunto-validation"></small>
-                            </div>
-                            <div class="form-group">
-                                <label for="mensagem" data-i18n="form.message_label">Mensagem / Escopo do Projeto</label>
-                                <textarea id="mensagem" name="message" rows="5" required
-                                    data-i18n-placeholder="form.message_placeholder" placeholder="Conte-me sobre os desafios do seu negócio..."></textarea>
-                                <small class="field-validation" id="mensagem-validation"></small>
-                            </div>
-                            <button type="submit" class="submit-btn" id="submit-btn">
-                                <span class="btn-text" data-i18n="form.submit">Enviar Mensagem</span>
-                                <i class="ph ph-paper-plane-right"></i>
-                            </button>
-                            <div id="form-message" class="form-message"></div>
-                        </form>
-                    </div>
+            <section id="sobre" aria-labelledby="sobre-h">
+                <div class="t-cmd"><span class="accent">›</span><h2 id="sobre-h">whoami</h2></div>
+                <div class="t-bar" aria-hidden="true"></div>
+                <p data-i18n="about.p1">Graduando em Sistemas para Internet pelo IFAC. Ex-desenvolvedor frontend na U:TECH (2022), ex-estagiário de infra e sistemas na Secretaria de Saúde do Acre (2023).</p>
+                <p data-i18n="about.p2">Foco em APIs robustas e soluções escaláveis — do levantamento de requisitos ao deploy, com Scrum/Kanban e inglês B2.</p>
+                <div class="t-avail">
+                    <span><span class="dot" aria-hidden="true">●</span> <span data-i18n="status.avail">disponível para projetos</span></span>
+                    <span class="muted">last_updated: 2026-10-12</span>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <hr class="t-sep">
+
+            <section id="contato-lista" aria-labelledby="contato-lista-h">
+                <div class="t-cmd"><span class="accent">›</span><h2 id="contato-lista-h">contact --list</h2></div>
+                <div class="t-bar" aria-hidden="true"></div>
+                <div class="t-contacts">
+                    <a href="mailto:davibrito.tech@gmail.com"><i class="ph ph-envelope-simple" aria-hidden="true"></i>davibrito.tech@gmail.com</a>
+                    <a href="https://github.com/ntcdave" target="_blank" rel="noopener"><i class="ph ph-github-logo" aria-hidden="true"></i>github.com/ntcdave</a>
+                    <a href="https://www.linkedin.com/in/ntcdave/" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo" aria-hidden="true"></i>in/ntcdave</a>
+                    <a href="https://wa.me/5568992475139" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i>(68) 99247-5139</a>
+                </div>
+            </section>
+
+            <hr class="t-sep">
+
+            <section id="projetos" aria-labelledby="projetos-h">
+                <div class="t-cmd"><span class="accent">›</span><h2 id="projetos-h">projects --featured</h2></div>
+                <div class="t-bar" aria-hidden="true"></div>
+                <a class="t-row" href="https://github.com/ntcdave/analise-radio-sdr" target="_blank" rel="noopener">
+                    <span class="t-idx">01</span>
+                    <span><span class="t-row-t">analise-radio-sdr</span><span class="t-row-d" data-i18n="projects.p1.desc">SIGINT offline: captura FM via RTL-SDR, DSP customizado, Whisper local e NLP ontológico. Python · PyQt6 · Edge AI.</span></span>
+                    <span class="t-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="t-row" href="https://github.com/ntcdave/rinha-de-backend-2025-davi-brito" target="_blank" rel="noopener">
+                    <span class="t-idx">02</span>
+                    <span><span class="t-row-t">rinha-de-backend-2025</span><span class="t-row-d" data-i18n="projects.p2.desc">API reativa de alta performance: Spring WebFlux, Circuit Breaker, Nginx + Docker. Java.</span></span>
+                    <span class="t-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="t-row" href="https://github.com/ntcdave/taskmaster" target="_blank" rel="noopener">
+                    <span class="t-idx">03</span>
+                    <span><span class="t-row-t">taskmaster</span><span class="t-row-d" data-i18n="projects.p3.desc">Gerenciador de tarefas em TypeScript. Escopo pequeno, código legível.</span></span>
+                    <span class="t-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="t-all" href="https://github.com/ntcdave" target="_blank" rel="noopener"><span data-i18n="projects.all">ver todos os projetos</span><span aria-hidden="true"> ↗</span></a>
+            </section>
+
+            <hr class="t-sep">
+
+            <section id="contato" aria-labelledby="contato-h">
+                <div class="t-cmd"><span class="accent">›</span><h2 id="contato-h">get_in_touch()</h2></div>
+                <div class="t-bar" aria-hidden="true"></div>
+                <form id="contact-form" novalidate>
+                    <div class="t-field">
+                        <label for="nome">--name</label>
+                        <input type="text" id="nome" name="user_name" required autocomplete="name"
+                            data-i18n-placeholder="form.name_ph" placeholder="seu nome">
+                    </div>
+                    <div class="t-field">
+                        <label for="email">--email</label>
+                        <input type="email" id="email" name="user_email" required autocomplete="email"
+                            data-i18n-placeholder="form.email_ph" placeholder="voce@email.com">
+                    </div>
+                    <div class="t-field">
+                        <label for="mensagem">--msg</label>
+                        <textarea id="mensagem" name="message" rows="4" required minlength="10"
+                            data-i18n-placeholder="form.msg_ph" placeholder="sobre o que quer conversar?"></textarea>
+                    </div>
+                    <p class="t-hint" data-i18n="form.hint">pressione enter ou clique em enviar — abre o whatsapp com a mensagem pronta.</p>
+                    <div class="t-form-foot">
+                        <small class="field-validation" id="form-validation" role="status"></small>
+                        <button type="submit" class="t-send" id="submit-btn"><span class="btn-text" data-i18n="form.submit">$ enviar →</span></button>
+                    </div>
+                </form>
+            </section>
+
+            <footer class="t-foot">
+                <span>© 2026 Davi Brito · Rio Branco, Acre — Brasil</span>
+                <span class="muted">· <a href="#topo">~/davibrito</a></span>
+            </footer>
+        </div>
     </main>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">Davi<span>.Brito</span></div>
-            <p data-i18n="footer.copy">© 2026 Direitos Reservados. Projetado para conversão &amp; escalabilidade.</p>
+    <div class="palette-root" id="palette-root" hidden>
+        <div class="palette-backdrop" data-palette-close></div>
+        <div class="palette" role="dialog" aria-modal="true" aria-label="Paleta de comandos">
+            <input id="palette-input" type="text" autocomplete="off" spellcheck="false"
+                data-i18n-placeholder="palette.ph" placeholder="digite um comando ou busque..." aria-label="Buscar comando">
+            <ul id="palette-list" role="listbox"></ul>
         </div>
-    </footer>
+    </div>
+
+    <button class="palette-fab" id="palette-fab" aria-label="Abrir paleta de comandos"><span aria-hidden="true">❯_</span>search <kbd>⌘K</kbd></button>
 </body>
 
 </html>
